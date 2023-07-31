@@ -15,7 +15,7 @@ function fNameCheck() {
 
     if (fName.value === "") {
         fName.style.outline = '1px solid #FF7A7A'
-        fName.style.backgroundImage = 'url(/images/icon-error.svg)';
+        fName.style.backgroundImage = 'url(/Intro-component-with-sign-up-form/images/icon-error.svg)';
         fNameError.style.display = 'block'
     }
     else {
@@ -29,7 +29,7 @@ function fNameCheck() {
 function lNameCheck() {
     if (lName.value === "") {
         lName.style.outline = '1px solid #FF7A7A'
-        lName.style.backgroundImage = 'url(/images/icon-error.svg)';
+        lName.style.backgroundImage = 'url(/Intro-component-with-sign-up-form/images/icon-error.svg)';
         lNameError.style.display = 'block'
 
     } else {
@@ -46,7 +46,7 @@ function emailCheck() {
 
     if (!isValidEmail || email.value === "") {
         email.style.outline = '1px solid #FF7A7A'
-        email.style.backgroundImage = 'url(/images/icon-error.svg)';
+        email.style.backgroundImage = 'url(/Intro-component-with-sign-up-form/images/icon-error.svg)';
         emailError.style.display = 'block'
 
     } else {
@@ -59,7 +59,7 @@ function emailCheck() {
 function passwordCheck() {
     if (password.value === "") {
         password.style.outline = '1px solid #FF7A7A'
-        password.style.backgroundImage = 'url(/images/icon-error.svg)';
+        password.style.backgroundImage = 'url(/Intro-component-with-sign-up-form/images/icon-error.svg)';
         passwordError.style.display = 'block'
     } else {
         password.style.outline = ''
