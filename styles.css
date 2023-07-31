@@ -15,7 +15,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: var(--primary-Red);
-  background-image: url(/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+  background-image: url(/images/bg-intro-desktop.png);
   font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -133,7 +133,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 10%;
-    background-image: url(/intro-component-with-signup-form-master/images/bg-intro-mobile.png);
+    background-image: url(/images/bg-intro-mobile.png);
   }
   .textContainer {
     height: 25vh;
