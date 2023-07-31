@@ -1,0 +1,216 @@
+:root {
+    --primary-Red: hsl(0, 100%, 74%);
+    --primary-Green: hsl(154, 59%, 51%);
+
+    --accent-Blue: hsl(248, 32%, 49%);
+
+    --neutral-Dblue: hsl(249, 10%, 26%);
+    --neutral-gishBlue: hsl(246, 25%, 77%);
+}
+
+
+* {
+    margin: 0;
+    font-size: 1rem;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--primary-Red);
+    background-image: url(/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+
+    font-family: 'Poppins', sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.textContainer {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10% 5% 10% 10%;
+
+    div {
+        height: 40vh;
+        width: 37vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        color: white;
+        font-size: 3rem;
+        line-height: 100%;
+        padding-bottom: 5%;
+    }
+
+    p {
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+.informationContainer {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .pricing {
+        background-color: var(--accent-Blue);
+        color: white;
+        height: 7.5vh;
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin: 0 0 4% 0;
+        box-shadow: 0 7px 1px rgba(77, 77, 77, 0.401);
+    }
+
+    .signUp {
+        background-color: white;
+        box-shadow: 0 7px 1px rgba(77, 77, 77, 0.401);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        width: 40vw;
+
+
+        div {
+            margin-right: 10%;
+            color: var(--primary-Red);
+            font-size: .7rem;
+            font-weight: 500;
+            align-self: flex-end;
+            display: none;
+
+        }
+
+        input {
+            border: 1px solid gray;
+            border-radius: 5px;
+            height: 7vh;
+            width: 30vw;
+            font-weight: 600;
+            padding: 0 5% 0 5%;
+            background-color: white;
+            caret-color: var(--accent-Blue);
+
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+
+            &:focus {
+                outline: 1px solid var(--accent-Blue);
+            }
+
+
+        }
+
+
+
+        .freeTrial {
+            width: 34vw;
+            color: white;
+            font-weight: 500;
+            background-color: var(--primary-Green);
+            cursor: pointer;
+            background-image: none;
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
+        .agreement {
+            font-size: .7rem;
+            color: var(--neutral-gishBlue);
+            align-self: center;
+            margin: 0;
+
+            span {
+                font-size: .7rem;
+                font-weight: 600;
+                color: var(--primary-Red);
+            }
+        }
+
+        .agreement {
+            display: block;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 10%;
+        background-image: url(/intro-component-with-signup-form-master/images/bg-intro-mobile.png);
+
+    }
+
+    .textContainer {
+        height: 25vh;
+        width: 90vw;
+        padding: 0;
+        justify-content: center;
+
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 120%;
+            width: 60vw;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        div {
+            width: 90vw;
+            align-items: center;
+
+        }
+    }
+
+    .informationContainer {
+
+
+        .signUp {
+            width: 90vw;
+
+            input {
+                width: 70vw;
+            }
+
+            .freeTrial {
+                width: 80vw;
+            }
+
+            .agreement {
+                text-align: center;
+                width: 70vw;
+            }
+        }
+
+        .pricing {
+            width: 90vw;
+        }
+    }
+}
